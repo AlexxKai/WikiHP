@@ -1,6 +1,6 @@
 // app.js
 const mysql = require('mysql');
-const config = require('./config');
+const config = require('./datos_bbdd');
 
 // Configuración de la conexión
 const connection = mysql.createConnection(config.database);

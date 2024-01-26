@@ -1,0 +1,36 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki de Harry Potter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Wiki de Harry Potter</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.ejs">Inicio</a></li>
+            <!-- Agrega enlaces a otras páginas según sea necesario -->
+        </ul>
+    </nav>
+    <main>
+        <section id="personajes">
+            <% personajes.forEach(personaje => { %>
+                <div class="personaje">
+                    <h2><%= personaje.nombre %></h2>
+                    <p>Casa: <%= personaje.casa %></p>
+                    <p>Magia: <%= personaje.magia ? "Sí" : "No" %></p>
+                </div>
+            <% }); %>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Wiki de Harry Potter</p>
+    </footer>
+</body>
+</html>
