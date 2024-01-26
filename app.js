@@ -1,7 +1,7 @@
 // app.js
 const express = require('express');
 const mysql = require('mysql');
-const config = require('./datos_bbdd');
+const config = require('./js/datos_bbdd');
 
 const app = express();
 const port = 3000;
