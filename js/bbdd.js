@@ -1,32 +1,49 @@
-// app.js
 const mysql = require('mysql');
-const config = require('./datos_bbdd');
+const config = require('../');
 
 // Configuración de la conexión
-const connection = mysql.createConnection(config.database);
+const pool = mysql.createPool(config.database);
+
+// Ejemplo de consulta a la base de datos utilizando promesas
+function consultarPersonajes() {
+  return new Promise((resolve, reject) => {
+    pool.query('SELECT * FROM personajes', (err, results) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(results);
+      }
+    });
+  });
+}
 
 // Conectar a la base de datos
-connection.connect((err) => {
+pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error de conexión:', err.message);
   } else {
     console.log('Conexión a la base de datos exitosa');
-    // Aquí puedes realizar operaciones adicionales que requieran la conexión
+
+    // Ejecutar consulta de ejemplo
+    consultarPersonajes()
+      .then((results) => {
+        console.log('Personajes:', results);
+
+        // Realizar más operaciones según sea necesario
+
+        // Cerrar la conexión cuando hayas terminado
+        connection.release();
+      })
+      .catch((err) => {
+        console.error('Error en la consulta:', err.message);
+
+        // Cerrar la conexión en caso de error
+        connection.release();
+      });
   }
 });
 
-// Cerrar la conexión cuando hayas terminado
-// connection.end();
-
 // Manejar errores
-connection.on('error', (err) => {
+pool.on('error', (err) => {
   console.error('Error de conexión:', err.message);
 });
-
-// Ejemplo de consulta a la base de datos
-connection.query('SELECT * FROM personajes', (err, results) => {
-  if (err) throw err;
-  console.log('Personajes:', results);
-});
-
-// Puedes agregar más consultas y operaciones según sea necesario
