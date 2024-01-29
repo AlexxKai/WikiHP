@@ -1,0 +1,103 @@
+[
+    {
+      "name": "Harry Potter",
+      "role": "Protagonista",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Hermione Granger",
+      "role": "Estudiante",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Ron Weasley",
+      "role": "Estudiante",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Albus Dumbledore",
+      "role": "Director de Hogwarts",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Severus Snape",
+      "role": "Profesor de Pociones",
+      "house": "Slytherin"
+    },
+    {
+      "name": "Voldemort",
+      "role": "Villano",
+      "house": "Slytherin"
+    },
+    {
+      "name": "Ginny Weasley",
+      "role": "Jugadora de Quidditch",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Luna Lovegood",
+      "role": "Estudiante",
+      "house": "Ravenclaw"
+    },
+    {
+      "name": "Sirius Black",
+      "role": "Padrino de Harry",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Dolores Umbridge",
+      "role": "Profesora de Defensa contra las Artes Oscuras",
+      "house": "Slytherin"
+    },
+    {
+      "name": "Remus Lupin",
+      "role": "Profesor de Transformaciones",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Nymphadora Tonks",
+      "role": "Aurora",
+      "house": "Hufflepuff"
+    },
+    {
+      "name": "Cedric Diggory",
+      "role": "Estudiante",
+      "house": "Hufflepuff"
+    },
+    {
+      "name": "Bellatrix Lestrange",
+      "role": "Mortífaga",
+      "house": "Slytherin"
+    },
+    {
+      "name": "Fleur Delacour",
+      "role": "Estudiante de Beauxbatons",
+      "house": "Beauxbatons"
+    },
+    {
+      "name": "Draco Malfoy",
+      "role": "Estudiante",
+      "house": "Slytherin"
+    },
+    {
+      "name": "Fred Weasley",
+      "role": "Gemelo de Ron",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "George Weasley",
+      "role": "Gemelo de Ron",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Rubeus Hagrid",
+      "role": "Guardián de las llaves y las criaturas mágicas",
+      "house": "Gryffindor"
+    },
+    {
+      "name": "Minerva McGonagall",
+      "role": "Profesora de Transformaciones",
+      "house": "Gryffindor"
+    }
+  ]
+  
