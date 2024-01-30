@@ -1,18 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Utilizar fetch para obtener datos del archivo JSON
-  fetch('characters.json')
+  // Ruta al archivo JSON
+  const jsonPath = 'characters.json';
+
+  // Obtener la lista de personajes del archivo JSON
+  fetch(jsonPath)
     .then(response => response.json())
     .then(data => {
-      // Manipular el DOM dinámicamente con los datos obtenidos
-      const charactersList = document.getElementById('charactersList');
-
-      data.forEach(character => {
-        const characterLi = document.createElement('li');
-        characterLi.textContent = `Nombre: ${character.name}, Rol: ${character.role}, Casa: ${character.house}`;
-        charactersList.appendChild(characterLi);
-      });
+      // Llamar a la función para mostrar la lista de personajes
+      displayCharacterList(data);
     })
-    .catch(error => console.error('Error al obtener los datos:', error));
+    .catch(error => console.error('Error al obtener datos del archivo JSON:', error));
 
-  // Puedes agregar otras funciones específicas de la página aquí
+  // Función para mostrar la lista de personajes
+  function displayCharacterList(characters) {
+    const charactersList = document.getElementById('charactersList');
+
+    // Iterar sobre la lista de personajes y agregarlos al DOM
+    characters.forEach(character => {
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `
+        <h3>${character.name}</h3>
+        <p><strong>Rol:</strong> ${character.role}</p>
+        <p><strong>Casa:</strong> ${character.house}</p>
+        <p><strong>Nacimiento:</strong> ${character.nacimiento}</p>
+        <p><strong>Descripción:</strong> ${character.descripcion}</p>
+      `;
+
+      // Agregar cada elemento a la lista
+      charactersList.appendChild(listItem);
+    });
+  }
 });

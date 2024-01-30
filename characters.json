@@ -1,103 +1,142 @@
 [
-    {
-      "name": "Harry Potter",
-      "role": "Protagonista",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Hermione Granger",
-      "role": "Estudiante",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Ron Weasley",
-      "role": "Estudiante",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Albus Dumbledore",
-      "role": "Director de Hogwarts",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Severus Snape",
-      "role": "Profesor de Pociones",
-      "house": "Slytherin"
-    },
-    {
-      "name": "Voldemort",
-      "role": "Villano",
-      "house": "Slytherin"
-    },
-    {
-      "name": "Ginny Weasley",
-      "role": "Jugadora de Quidditch",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Luna Lovegood",
-      "role": "Estudiante",
-      "house": "Ravenclaw"
-    },
-    {
-      "name": "Sirius Black",
-      "role": "Padrino de Harry",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Dolores Umbridge",
-      "role": "Profesora de Defensa contra las Artes Oscuras",
-      "house": "Slytherin"
-    },
-    {
-      "name": "Remus Lupin",
-      "role": "Profesor de Transformaciones",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Nymphadora Tonks",
-      "role": "Aurora",
-      "house": "Hufflepuff"
-    },
-    {
-      "name": "Cedric Diggory",
-      "role": "Estudiante",
-      "house": "Hufflepuff"
-    },
-    {
-      "name": "Bellatrix Lestrange",
-      "role": "Mortífaga",
-      "house": "Slytherin"
-    },
-    {
-      "name": "Fleur Delacour",
-      "role": "Estudiante de Beauxbatons",
-      "house": "Beauxbatons"
-    },
-    {
-      "name": "Draco Malfoy",
-      "role": "Estudiante",
-      "house": "Slytherin"
-    },
-    {
-      "name": "Fred Weasley",
-      "role": "Gemelo de Ron",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "George Weasley",
-      "role": "Gemelo de Ron",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Rubeus Hagrid",
-      "role": "Guardián de las llaves y las criaturas mágicas",
-      "house": "Gryffindor"
-    },
-    {
-      "name": "Minerva McGonagall",
-      "role": "Profesora de Transformaciones",
-      "house": "Gryffindor"
-    }
-  ]
-  
+  {
+    "name": "Harry Potter",
+    "role": "Protagonista",
+    "house": "Gryffindor",
+    "nacimiento": "31 de julio de 1980",
+    "descripcion": "El niño que sobrevivió y derrotó a Lord Voldemort."
+  },
+  {
+    "name": "Hermione Granger",
+    "role": "Estudiante",
+    "house": "Gryffindor",
+    "nacimiento": "19 de septiembre de 1979",
+    "descripcion": "Una inteligente y dedicada estudiante de magia."
+  },
+  {
+    "name": "Ron Weasley",
+    "role": "Estudiante",
+    "house": "Gryffindor",
+    "nacimiento": "1 de marzo de 1980",
+    "descripcion": "Amigo leal y compañero de Harry y Hermione."
+  },
+  {
+    "name": "Albus Dumbledore",
+    "role": "Director de Hogwarts",
+    "house": "Gryffindor",
+    "nacimiento": "?? de ????, ????",
+    "descripcion": "Poderoso mago y líder de la comunidad mágica."
+  },
+  {
+    "name": "Severus Snape",
+    "role": "Profesor de Pociones",
+    "house": "Slytherin",
+    "nacimiento": "?? de ????, ????",
+    "descripcion": "Misterioso y complejo, con lealtades ambivalentes."
+  },
+  {
+    "name": "Voldemort",
+    "role": "Villano",
+    "house": "Slytherin",
+    "nacimiento": "?? de ????, ????",
+    "descripcion": "El mago oscuro que no debe ser nombrado."
+  },
+  {
+    "name": "Ginny Weasley",
+    "role": "Jugadora de Quidditch",
+    "house": "Gryffindor",
+    "nacimiento": "11 de agosto de 1981",
+    "descripcion": "Valiente y talentosa, hermana menor de Ron."
+  },
+  {
+    "name": "Luna Lovegood",
+    "role": "Estudiante",
+    "house": "Ravenclaw",
+    "nacimiento": "13 de febrero de 1981",
+    "descripcion": "Excéntrica y con una perspectiva única de la vida."
+  },
+  {
+    "name": "Sirius Black",
+    "role": "Padrino de Harry",
+    "house": "Gryffindor",
+    "nacimiento": "3 de noviembre de 1959",
+    "descripcion": "Anarquista y valiente, amigo cercano de James Potter."
+  },
+  {
+    "name": "Dolores Umbridge",
+    "role": "Profesora de Defensa contra las Artes Oscuras",
+    "house": "Slytherin",
+    "nacimiento": "?? de ????, ????",
+    "descripcion": "Política y autoritaria, defensora de métodos represivos."
+  },
+  {
+    "name": "Remus Lupin",
+    "role": "Profesor de Transformaciones",
+    "house": "Gryffindor",
+    "nacimiento": "10 de marzo de 1960",
+    "descripcion": "Licántropo y amigo de Harry, Ron y Hermione."
+  },
+  {
+    "name": "Nymphadora Tonks",
+    "role": "Aurora",
+    "house": "Hufflepuff",
+    "nacimiento": "15 de diciembre de 1973",
+    "descripcion": "Metamorfomaga y miembro de la Orden del Fénix."
+  },
+  {
+    "name": "Cedric Diggory",
+    "role": "Estudiante",
+    "house": "Hufflepuff",
+    "nacimiento": "?? de ????, ????",
+    "descripcion": "Valiente y honorable, campeón en el Torneo de los Tres Magos."
+  },
+  {
+    "name": "Bellatrix Lestrange",
+    "role": "Mortífaga",
+    "house": "Slytherin",
+    "nacimiento": "?? de ????, ????",
+    "descripcion": "Devota seguidora de Lord Voldemort, peligrosa y despiadada."
+  },
+  {
+    "name": "Fleur Delacour",
+    "role": "Estudiante de Beauxbatons",
+    "house": "Beauxbatons",
+    "nacimiento": "?? de ????, ????",
+    "descripcion": "Participante en el Torneo de los Tres Magos, de origen francés."
+  },
+  {
+    "name": "Draco Malfoy",
+    "role": "Estudiante",
+    "house": "Slytherin",
+    "nacimiento": "5 de junio de 1980",
+    "descripcion": "Estudiante de Slytherin, rival de Harry en Hogwarts."
+  },
+  {
+    "name": "Fred Weasley",
+    "role": "Gemelo de Ron",
+    "house": "Gryffindor",
+    "nacimiento": "1 de abril de 1978",
+    "descripcion": "Bromista y empresario, gemelo de George Weasley."
+  },
+  {
+    "name": "George Weasley",
+    "role": "Gemelo de Ron",
+    "house": "Gryffindor",
+    "nacimiento": "1 de abril de 1978",
+    "descripcion": "Bromista y empresario, gemelo de Fred Weasley."
+  },
+  {
+    "name": "Rubeus Hagrid",
+    "role": "Guardián de las llaves y las criaturas mágicas",
+    "house": "Gryffindor",
+    "nacimiento": "6 de diciembre de 1928",
+    "descripcion": "Amante de las criaturas mágicas y amigo de Harry."
+  },
+  {
+    "name": "Minerva McGonagall",
+    "role": "Profesora de Transformaciones",
+    "house": "Gryffindor",
+    "nacimiento": "4 de octubre de 1925",
+    "descripcion": "Animaga y subdirectora de Hogwarts."
+  }
+]

@@ -1,32 +1,88 @@
+/* Reset de estilos */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, nav, article, footer {
-    margin: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  article {
-    border: 1px solid #ccc;
-    padding: 20px;
-  }
-  
-  footer {
-    margin-top: 50px;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 10px;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+article {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Barra de navegación */
+nav ul {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos específicos para la lista de personajes */
+#charactersList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#charactersList li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#charactersList li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Estilos para la barra de búsqueda si es necesario */
+/*#searchInput {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}*/
+
+/* Otros estilos específicos según necesidades */
