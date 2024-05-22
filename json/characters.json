@@ -1,142 +1,362 @@
 [
   {
-    "name": "Harry Potter",
-    "role": "Protagonista",
-    "house": "Gryffindor",
-    "nacimiento": "31 de julio de 1980",
-    "descripcion": "El niño que sobrevivió y derrotó a Lord Voldemort."
+    "id": 1,
+    "hechizo": "Accio",
+    "uso": "Encanto de invocación"
   },
   {
-    "name": "Hermione Granger",
-    "role": "Estudiante",
-    "house": "Gryffindor",
-    "nacimiento": "19 de septiembre de 1979",
-    "descripcion": "Una inteligente y dedicada estudiante de magia."
+    "id": 2,
+    "hechizo": "Glisseo",
+    "uso": "Convierte una escalera en un tobogán"
   },
   {
-    "name": "Ron Weasley",
-    "role": "Estudiante",
-    "house": "Gryffindor",
-    "nacimiento": "1 de marzo de 1980",
-    "descripcion": "Amigo leal y compañero de Harry y Hermione."
+    "id": 3,
+    "hechizo": "Impervius",
+    "uso": "Protege al lanzador de una variedad de sustancias, incluidos el agua y el fuego."
   },
   {
-    "name": "Albus Dumbledore",
-    "role": "Director de Hogwarts",
-    "house": "Gryffindor",
-    "nacimiento": "?? de ????, ????",
-    "descripcion": "Poderoso mago y líder de la comunidad mágica."
+    "id": 4,
+    "hechizo": "Wingardium Leviosa/Locomotor",
+    "uso": "Levita objetos"
   },
   {
-    "name": "Severus Snape",
-    "role": "Profesor de Pociones",
-    "house": "Slytherin",
-    "nacimiento": "?? de ????, ????",
-    "descripcion": "Misterioso y complejo, con lealtades ambivalentes."
+    "id": 5,
+    "hechizo": "Scourgify",
+    "uso": "Limpia cosas"
   },
   {
-    "name": "Voldemort",
-    "role": "Villano",
-    "house": "Slytherin",
-    "nacimiento": "?? de ????, ????",
-    "descripcion": "El mago oscuro que no debe ser nombrado."
+    "id": 6,
+    "hechizo": "Portus",
+    "uso": "Crea un traslador"
   },
   {
-    "name": "Ginny Weasley",
-    "role": "Jugadora de Quidditch",
-    "house": "Gryffindor",
-    "nacimiento": "11 de agosto de 1981",
-    "descripcion": "Valiente y talentosa, hermana menor de Ron."
+    "id": 7,
+    "hechizo": "Orchideous",
+    "uso": "Crece flores desde el final de la varita"
   },
   {
-    "name": "Luna Lovegood",
-    "role": "Estudiante",
-    "house": "Ravenclaw",
-    "nacimiento": "13 de febrero de 1981",
-    "descripcion": "Excéntrica y con una perspectiva única de la vida."
+    "id": 8,
+    "hechizo": "Lumos",
+    "uso": "Hace que la varita emita luz"
   },
   {
-    "name": "Sirius Black",
-    "role": "Padrino de Harry",
-    "house": "Gryffindor",
-    "nacimiento": "3 de noviembre de 1959",
-    "descripcion": "Anarquista y valiente, amigo cercano de James Potter."
+    "id": 9,
+    "hechizo": "Reparo",
+    "uso": "Repara objetos rotos"
   },
   {
-    "name": "Dolores Umbridge",
-    "role": "Profesora de Defensa contra las Artes Oscuras",
-    "house": "Slytherin",
-    "nacimiento": "?? de ????, ????",
-    "descripcion": "Política y autoritaria, defensora de métodos represivos."
+    "id": 10,
+    "hechizo": "Reducio",
+    "uso": "Contrae objetos"
   },
   {
-    "name": "Remus Lupin",
-    "role": "Profesor de Transformaciones",
-    "house": "Gryffindor",
-    "nacimiento": "10 de marzo de 1960",
-    "descripcion": "Licántropo y amigo de Harry, Ron y Hermione."
+    "id": 11,
+    "hechizo": "Pack",
+    "uso": "Empaca baúles y equipaje"
   },
   {
-    "name": "Nymphadora Tonks",
-    "role": "Aurora",
-    "house": "Hufflepuff",
-    "nacimiento": "15 de diciembre de 1973",
-    "descripcion": "Metamorfomaga y miembro de la Orden del Fénix."
+    "id": 12,
+    "hechizo": "Riddikulus",
+    "uso": "Transforma los Boggarts en una forma divertida"
   },
   {
-    "name": "Cedric Diggory",
-    "role": "Estudiante",
-    "house": "Hufflepuff",
-    "nacimiento": "?? de ????, ????",
-    "descripcion": "Valiente y honorable, campeón en el Torneo de los Tres Magos."
+    "id": 13,
+    "hechizo": "Protego",
+    "uso": "Protege al lanzador de las maldiciones"
   },
   {
-    "name": "Bellatrix Lestrange",
-    "role": "Mortífaga",
-    "house": "Slytherin",
-    "nacimiento": "?? de ????, ????",
-    "descripcion": "Devota seguidora de Lord Voldemort, peligrosa y despiadada."
+    "id": 14,
+    "hechizo": "Muffliato",
+    "uso": "Evita que otras personas cercanas escuchen conversaciones"
   },
   {
-    "name": "Fleur Delacour",
-    "role": "Estudiante de Beauxbatons",
-    "house": "Beauxbatons",
-    "nacimiento": "?? de ????, ????",
-    "descripcion": "Participante en el Torneo de los Tres Magos, de origen francés."
+    "id": 15,
+    "hechizo": "Silencio/Langlock",
+    "uso": "Evita que alguien hable (pegando la lengua al paladar)"
   },
   {
-    "name": "Draco Malfoy",
-    "role": "Estudiante",
-    "house": "Slytherin",
-    "nacimiento": "5 de junio de 1980",
-    "descripcion": "Estudiante de Slytherin, rival de Harry en Hogwarts."
+    "id": 16,
+    "hechizo": "Expelliarmus",
+    "uso": "Encanto de desarme"
   },
   {
-    "name": "Fred Weasley",
-    "role": "Gemelo de Ron",
-    "house": "Gryffindor",
-    "nacimiento": "1 de abril de 1978",
-    "descripcion": "Bromista y empresario, gemelo de George Weasley."
+    "id": 17,
+    "hechizo": "Oblivate",
+    "uso": "Borra recuerdos"
   },
   {
-    "name": "George Weasley",
-    "role": "Gemelo de Ron",
-    "house": "Gryffindor",
-    "nacimiento": "1 de abril de 1978",
-    "descripcion": "Bromista y empresario, gemelo de Fred Weasley."
+    "id": 18,
+    "hechizo": "Episkey",
+    "uso": "Cura heridas leves"
   },
   {
-    "name": "Rubeus Hagrid",
-    "role": "Guardián de las llaves y las criaturas mágicas",
-    "house": "Gryffindor",
-    "nacimiento": "6 de diciembre de 1928",
-    "descripcion": "Amante de las criaturas mágicas y amigo de Harry."
+    "id": 19,
+    "hechizo": "Tergeo",
+    "uso": "Limpia superficies"
   },
   {
-    "name": "Minerva McGonagall",
-    "role": "Profesora de Transformaciones",
-    "house": "Gryffindor",
-    "nacimiento": "4 de octubre de 1925",
-    "descripcion": "Animaga y subdirectora de Hogwarts."
+    "id": 20,
+    "hechizo": "Relashio",
+    "uso": "Obliga al objetivo a soltar lo que sea que esté sosteniendo"
+  },
+  {
+    "id": 21,
+    "hechizo": "Confundo",
+    "uso": "Causa confusiones y hace que otros sean fácilmente susceptibles a la influencia."
+  },
+  {
+    "id": 22,
+    "hechizo": "Expecto Patronum",
+    "uso": "Encanto Patronus"
+  },
+  {
+    "id": 23,
+    "hechizo": "Ferula",
+    "uso": "Conjura vendajes"
+  },
+  {
+    "id": 24,
+    "hechizo": "Evanesco",
+    "uso": "Hechizo de desaparición"
+  },
+  {
+    "id": 25,
+    "hechizo": "Alohomora",
+    "uso": "Abre cerraduras"
+  },
+  {
+    "id": 26,
+    "hechizo": "Nox",
+    "uso": "Apaga lumos"
+  },
+  {
+    "id": 27,
+    "hechizo": "Quietus",
+    "uso": "Silencia la voz mágicamente amplificada"
+  },
+  {
+    "id": 28,
+    "hechizo": "Incendio",
+    "uso": "Crea fuego"
+  },
+  {
+    "id": 29,
+    "hechizo": "Homenum Revelio",
+    "uso": "Revelar personas cercanas"
+  },
+  {
+    "id": 30,
+    "hechizo": "Prior Incantato",
+    "uso": "Revela el último hechizo lanzado"
+  },
+  {
+    "id": 31,
+    "hechizo": "Finite Incantatem",
+    "uso": "Niega los efectos de muchos hechizos."
+  },
+  {
+    "id": 32,
+    "hechizo": "Erecto",
+    "uso": "Levanta carpas u otras estructuras."
+  },
+  {
+    "id": 33,
+    "hechizo": "Diffindo",
+    "uso": "Corta o rasga material"
+  },
+  {
+    "id": 34,
+    "hechizo": "Stupefy",
+    "uso": "Aturde al objetivo"
+  },
+  {
+    "id": 35,
+    "hechizo": "Repelo Muggletum",
+    "uso": "Repele Muggles"
+  },
+  {
+    "id": 36,
+    "hechizo": "Avada Kedavra",
+    "uso": "La maldición asesina"
+  },
+  {
+    "id": 37,
+    "hechizo": "Aguamenti",
+    "uso": "Dispara agua con la varita"
+  },
+  {
+    "id": 38,
+    "hechizo": "Geminio",
+    "uso": "Crea un duplicado temporal y sin valor de cualquier objeto"
+  },
+  {
+    "id": 39,
+    "hechizo": "Locomotor Mortis",
+    "uso": "Maldición de bloqueo de piernas"
+  },
+  {
+    "id": 40,
+    "hechizo": "Anapneo",
+    "uso": "Limpia las vías respiratorias de alguien"
+  },
+  {
+    "id": 41,
+    "hechizo": "Reducto",
+    "uso": "Explota objeto"
+  },
+  {
+    "id": 42,
+    "hechizo": "Obscuro",
+    "uso": "Objetivo con los ojos vendados"
+  },
+  {
+    "id": 43,
+    "hechizo": "Impedimenta",
+    "uso": "Congela a alguien que avanza hacia ti"
+  },
+  {
+    "id": 44,
+    "hechizo": "Cave Inimicum/Protego Totalum",
+    "uso": "Fortalece las defensas de un área"
+  },
+  {
+    "id": 45,
+    "hechizo": "Meteolojinx Recanto",
+    "uso": "Acaba con los efectos de los hechizos meteorológicos"
+  },
+  {
+    "id": 46,
+    "hechizo": "Specialis Revelio",
+    "uso": "Revela propiedades mágicas ocultas en un objeto."
+  },
+  {
+    "id": 47,
+    "hechizo": "Descendo",
+    "uso": "Mueve objetos hacia abajo"
+  },
+  {
+    "id": 48,
+    "hechizo": "Defodio",
+    "uso": "Talla a través de la piedra y el acero"
+  },
+  {
+    "id": 49,
+    "hechizo": "Aparecium",
+    "uso": "Hacer aparecer tinta invisible"
+  },
+  {
+    "id": 50,
+    "hechizo": "Piertotum Locomotor",
+    "uso": "Anima estatuas"
+  },
+  {
+    "id": 51,
+    "hechizo": "Imperio",
+    "uso": "Hace que el objetivo obedezca cada orden"
+  },
+  {
+    "id": 52,
+    "hechizo": "Fidelius Charm",
+    "uso": "Une un secreto al alma de un Guardián de Secretos"
+  },
+  {
+    "id": 53,
+    "hechizo": "Avis/Oppugno",
+    "uso": "Dispara bandada de pájaros con varita"
+  },
+  {
+    "id": 54,
+    "hechizo": "Expulso",
+    "uso": "Explota objetos"
+  },
+  {
+    "id": 55,
+    "hechizo": "Legilimens",
+    "uso": "Revela recuerdos y pensamientos del objetivo."
+  },
+  {
+    "id": 56,
+    "hechizo": "Duro",
+    "uso": "Endurece los objetos"
+  },
+  {
+    "id": 57,
+    "hechizo": "Sonorus",
+    "uso": "Amplifica la voz de uno"
+  },
+  {
+    "id": 58,
+    "hechizo": "Deprimo",
+    "uso": "Crea una gran presión hacia abajo"
+  },
+  {
+    "id": 59,
+    "hechizo": "Levicorpus",
+    "uso": "Levita el objetivo por el tobillo"
+  },
+  {
+    "id": 60,
+    "hechizo": "Liberacorpus",
+    "uso": "Reduce el objetivo de levicorpus"
+  },
+  {
+    "id": 61,
+    "hechizo": "Mobilicorpus",
+    "uso": "Mueve cuerpos"
+  },
+  {
+    "id": 62,
+    "hechizo": "Confringo",
+    "uso": "Explota objetos en llamas"
+  },
+  {
+    "id": 63,
+    "hechizo": "Densaugeo",
+    "uso": "Hace que los dientes crezcan rápidamente"
+  },
+  {
+    "id": 64,
+    "hechizo": "Incarcarous",
+    "uso": "Ata a alguien con cuerdas"
+  },
+  {
+    "id": 65,
+    "hechizo": "Deletrius",
+    "uso": "Descarta los efectos de Prior Incantato"
+  },
+  {
+    "id": 66,
+    "hechizo": "Rictusempra",
+    "uso": "Encanto de cosquillas"
+  },
+  {
+    "id": 67,
+    "hechizo": "Petrificus Totalus",
+    "uso": "El objetivo de renderizado está completamente inmóvil"
+  },
+  {
+    "id": 68,
+    "hechizo": "Fiendfyre Curse",
+    "uso": "Hace fuego maldito"
+  },
+  {
+    "id": 69,
+    "hechizo": "Tarantallegra",
+    "uso": "Obliga al objetivo a bailar"
+  },
+  {
+    "id": 70,
+    "hechizo": "Morsmordre",
+    "uso": "Conjura la Marca Tenebrosa"
+  },
+  {
+    "id": 71,
+    "hechizo": "Sectumsempra",
+    "uso": "Provoca laceraciones graves"
+  },
+  {
+    "id": 72,
+    "hechizo": "Crucio",
+    "uso": "Causa un dolor inmenso"
   }
 ]

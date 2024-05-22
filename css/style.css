@@ -26,6 +26,8 @@ header {
 nav {
   background-color: #444;
   padding: 10px;
+  color: red;
+
 }
 
 nav ul {
@@ -50,6 +52,12 @@ article {
   margin: 20px;
   padding: 20px;
   border-radius: 8px;
+  align-items: center;
+}
+
+button{
+  margin-top: 10px;
+  background: linear-gradient(black, white);
 }
 
 footer {
@@ -61,11 +69,19 @@ footer {
 }
 
 
-/* Estilos específicos para la lista de personajes */
+/* Estilos personajes */
+#randomCard{
+  margin: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  align-items: center;
+}
+
 .charactersList {
   border: 1px solid #000;
+  border-radius: 5%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 10px;
   display: inline-block;
   width: 250px;
   height: 475px;
@@ -94,8 +110,5 @@ img {
   margin-bottom: 10px;
 }*/
 
-/*Estilos del botón seleccionar*/
-button{
-  margin-top: 10px;
-  background: linear-gradient(white,black);
-}
+/*Estilos batalla*/
+

@@ -80,10 +80,40 @@ fetch(url)
         } else {
           // Almacenar el actor seleccionado en el array
           personajesSeleccionados.push(actor);
+
+          // Si hay dos personajes seleccionados, guardar en localStorage y redirigir
           if (personajesSeleccionados.length === 2) {
             localStorage.setItem('selectedActors', JSON.stringify(personajesSeleccionados));
             window.location.href = 'hechizos.html';
           }
+
+          // Abrir una ventana emergente para mostrar los personajes seleccionados
+          const popupWindow = window.open('', 'popup', 'width=400,height=300');
+          popupWindow.document.write('<h2>Personajes Seleccionados:</h2>');
+
+          // Mostrar los nombres de los personajes en la ventana emergente
+          personajesSeleccionados.forEach(selected => {
+            popupWindow.document.write(`<p>${selected.personaje}</p>`);
+          });
+
+          // Crear el botón para eliminar selección
+          const deleteButton = popupWindow.document.createElement('button');
+          deleteButton.textContent = 'Eliminar selección';
+          popupWindow.document.body.appendChild(deleteButton);
+
+          // Manejar el evento de clic del botón para eliminar personajes
+          deleteButton.addEventListener('click', () => {
+            // Encontrar el índice del personaje en el array 'personajesSeleccionados'
+            const index = personajesSeleccionados.findIndex(selected => selected.id === actor.id);
+            if (index !== -1) {
+              // Eliminar el personaje seleccionado
+              personajesSeleccionados.splice(index, 1);
+              localStorage.setItem('selectedActors', JSON.stringify(personajesSeleccionados));
+
+              // Actualizar la ventana emergente con la nueva lista de personajes
+              popupWindow.location.reload();
+            }
+          });
         }
       });
 
