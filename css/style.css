@@ -1,5 +1,10 @@
 /* Reset de estilos */
-body, h1, h2, p, ul, li {
+body,
+h1,
+h2,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -17,18 +22,26 @@ header {
   text-align: center;
 }
 
+/* Barra de navegación */
 nav {
   background-color: #444;
   padding: 10px;
 }
 
 nav ul {
+  display: flex;
   list-style: none;
 }
 
 nav li {
   display: inline;
   margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 article {
@@ -47,34 +60,30 @@ footer {
   padding: 10px;
 }
 
-/* Barra de navegación */
-nav ul {
-  display: flex;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 
 /* Estilos específicos para la lista de personajes */
-#charactersList {
-  list-style-type: none;
-  padding: 0;
-}
-
-#charactersList li {
-  margin-bottom: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+.charactersList {
+  border: 1px solid #000;
   padding: 10px;
-  border-radius: 4px;
+  margin: 10px 0;
+  display: inline-block;
+  width: 250px;
+  height: 475px;
+  text-align: center;
+  vertical-align: top;
 }
 
-#charactersList li:hover {
-  background-color: #f0f0f0;
-  cursor: pointer;
+.details {
+  margin-top: 10px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+img {
+  width: 100px;
+  height: 150px;
 }
 
 /* Estilos para la barra de búsqueda si es necesario */
@@ -85,4 +94,8 @@ nav a {
   margin-bottom: 10px;
 }*/
 
-/* Otros estilos específicos según necesidades */
+/*Estilos del botón seleccionar*/
+button{
+  margin-top: 10px;
+  background: linear-gradient(white,black);
+}
