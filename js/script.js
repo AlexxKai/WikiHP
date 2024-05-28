@@ -28,107 +28,113 @@ class Actor {
   }
 }
 
-const url = 'https://harry-potter-api.onrender.com/personajes/';
-const randomCardContainer = document.getElementById('randomCard');
-const personajesSeleccionados = []; // Array para almacenar los personajes seleccionados
+document.addEventListener('DOMContentLoaded', function () {
 
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    data.forEach(personaje => {
-      const { id, personaje: nombrePersonaje, apodo, estudianteDeHogwarts, casaDeHogwarts, interpretado_por, hijos, imagen } = personaje;
+  const url = 'https://harry-potter-api.onrender.com/personajes/';
+  const randomCardContainer = document.getElementById('randomCard');
+  const personajesSeleccionados = []; // Array para almacenar los personajes seleccionados
 
-      const actor = new Actor(id, nombrePersonaje, apodo, estudianteDeHogwarts, casaDeHogwarts, interpretado_por, hijos, imagen);
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach(personaje => {
+        const { id, personaje: nombrePersonaje, apodo, estudianteDeHogwarts, casaDeHogwarts, interpretado_por, hijos, imagen } = personaje;
 
-      const randomCard = document.createElement('div');
-      randomCard.classList.add('charactersList');
+        const actor = new Actor(id, nombrePersonaje, apodo, estudianteDeHogwarts, casaDeHogwarts, interpretado_por, hijos, imagen);
 
-      const randomImagen = document.createElement('img');
-      randomImagen.src = actor.imagen;
-      randomImagen.alt = actor.personaje;
+        const randomCard = document.createElement('div');
+        randomCard.classList.add('charactersList');
 
-      const randomDetails = document.createElement('div');
-      randomDetails.classList.add('details');
+        const randomImagen = document.createElement('img');
+        randomImagen.src = actor.imagen;
+        randomImagen.alt = actor.personaje;
 
-      const detailsElements = [
-        { label: 'ID:', value: actor.id },
-        { label: 'Apodo:', value: actor.apodo },
-        { label: 'Estudiante De Hogwarts:', value: actor.estudianteDeHogwarts },
-        { label: 'Casa De Hogwarts:', value: actor.casaDeHogwarts },
-        { label: 'Interpretado por:', value: actor.interpretado_por },
-        { label: 'Hijos:', value: actor.hijos },
-      ];
+        const randomDetails = document.createElement('div');
+        randomDetails.classList.add('details');
 
-      detailsElements.forEach((detail) => {
-        const detailElement = document.createElement('p');
-        detailElement.textContent = `${detail.label} ${detail.value}`;
-        randomDetails.append(detailElement);
-      });
+        const detailsElements = [
+          { label: 'ID:', value: actor.id },
+          { label: 'Apodo:', value: actor.apodo },
+          { label: 'Estudiante De Hogwarts:', value: actor.estudianteDeHogwarts },
+          { label: 'Casa De Hogwarts:', value: actor.casaDeHogwarts },
+          { label: 'Interpretado por:', value: actor.interpretado_por },
+          { label: 'Hijos:', value: actor.hijos },
+        ];
 
-      const randomName = document.createElement('h4');
-      randomName.textContent = actor.personaje.charAt(0).toUpperCase() + actor.personaje.slice(1);
+        detailsElements.forEach((detail) => {
+          const detailElement = document.createElement('p');
+          detailElement.textContent = `${detail.label} ${detail.value}`;
+          randomDetails.append(detailElement);
+        });
 
-      const selectButton = document.createElement('button');
-      selectButton.textContent = 'Seleccionar';
-      selectButton.classList.add('select-button');
-      selectButton.style.color = 'rgb(0, 255, 42)';
+        const randomName = document.createElement('h4');
+        randomName.textContent = actor.personaje.charAt(0).toUpperCase() + actor.personaje.slice(1);
 
-      selectButton.addEventListener('click', () => {
-        // Verificar si el personaje ya está seleccionado
-        if (personajesSeleccionados.some(selectedActor => selectedActor.id === actor.id)) {
-          alert('¡Este personaje ya ha sido seleccionado!');
-        } else {
-          // Almacenar el actor seleccionado en el array
-          personajesSeleccionados.push(actor);
+        const selectButton = document.createElement('button');
+        selectButton.textContent = 'Seleccionar';
+        selectButton.classList.add('select-button');
+        selectButton.style.color = 'rgb(0, 255, 42)';
 
-          // Si hay dos personajes seleccionados, guardar en localStorage y redirigir
-          if (personajesSeleccionados.length === 2) {
-            localStorage.setItem('selectedActors', JSON.stringify(personajesSeleccionados));
-            window.location.href = 'hechizos.html';
-          }
+        selectButton.addEventListener('click', () => {
+          // Verificar si el personaje ya está seleccionado
+          if (personajesSeleccionados.some(selectedActor => selectedActor.id === actor.id)) {
+            alert('¡Este personaje ya ha sido seleccionado!');
+          } else {
+            // Almacenar el actor seleccionado en el array
+            personajesSeleccionados.push(actor);
 
-          // Abrir una ventana emergente para mostrar los personajes seleccionados
-          const popupWindow = window.open('', 'popup', 'width=400,height=300');
-          popupWindow.document.write('<h2>Personajes Seleccionados:</h2>');
-
-          // Mostrar los nombres de los personajes en la ventana emergente
-          personajesSeleccionados.forEach(selected => {
-            popupWindow.document.write(`<p>${selected.personaje}</p>`);
-          });
-
-          // Crear el botón para eliminar selección
-          const deleteButton = popupWindow.document.createElement('button');
-          deleteButton.textContent = 'Eliminar selección';
-          popupWindow.document.body.appendChild(deleteButton);
-
-          // Manejar el evento de clic del botón para eliminar personajes
-          deleteButton.addEventListener('click', () => {
-            // Encontrar el índice del personaje en el array 'personajesSeleccionados'
-            const index = personajesSeleccionados.findIndex(selected => selected.id === actor.id);
-            if (index !== -1) {
-              // Eliminar el personaje seleccionado
-              personajesSeleccionados.splice(index, 1);
+            // Si hay dos personajes seleccionados, guardar en localStorage y redirigir
+            if (personajesSeleccionados.length === 2) {
               localStorage.setItem('selectedActors', JSON.stringify(personajesSeleccionados));
-
-              // Actualizar la ventana emergente con la nueva lista de personajes
-              popupWindow.location.reload();
+              window.location.href = 'hechizos.html';
             }
-          });
-        }
+
+            // Abrir una ventana emergente para mostrar los personajes seleccionados
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            const popupWidth = 400;
+            const popupHeight = 300;
+            const left = (screenWidth - popupWidth) / 2;
+            const top = (screenHeight - popupHeight) / 2;
+
+            const popupWindow = window.open('', 'popup', `width=${popupWidth},height=${popupHeight},left=${left},top=${top}`);
+            popupWindow.document.write('<h2>Personaje seleccionado:</h2>');
+
+            // Mostrar los nombres de los personajes en la ventana emergente
+            personajesSeleccionados.forEach(selected => {
+              popupWindow.document.write(`<p>${selected.personaje}</p>`);
+            });
+
+            // Botón para eliminar selección
+            const deleteButton = popupWindow.document.createElement('button');
+            deleteButton.textContent = 'Eliminar selección';
+            popupWindow.document.body.appendChild(deleteButton);
+
+            // Evento de clic del botón para eliminar personajes
+            deleteButton.addEventListener('click', () => {
+              // Encontrar el índice del personaje en array 'personajesSeleccionados'
+              const index = personajesSeleccionados.findIndex(selected => selected.id === actor.id);
+              if (index !== -1) {
+                // Eliminar el personaje seleccionado
+                personajesSeleccionados.splice(index, 1);
+                localStorage.setItem('selectedActors', JSON.stringify(personajesSeleccionados));
+                popupWindow.close();
+
+                // Actualizar la ventana emergente con la nueva lista de personajes
+                popupWindow.location.reload();
+              }
+            });
+          }
+        });
+
+        randomCard.append(randomImagen);
+        randomCard.append(randomDetails);
+        randomCard.append(randomName);
+        randomCard.append(selectButton);
+        randomCardContainer.append(randomCard);
       });
-
-      randomCard.append(randomImagen);
-      randomCard.append(randomDetails);
-      randomCard.append(randomName);
-      randomCard.append(selectButton);
-      randomCardContainer.append(randomCard);
+    })
+    .catch((error) => {
+      console.error('Error al recuperar los datos del actor.', error);
     });
-  })
-  .catch((error) => {
-    console.error('Error al recuperar los datos del actor.', error);
-  });
-
-// Navegación a otra página
-document.getElementById("iframe").addEventListener("click", function () {
-  window.location.href = "preguntas.html";
 });

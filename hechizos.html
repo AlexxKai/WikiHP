@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Historia y preguntas</title>
+  <title>Wiki HP</title>
   <link rel="stylesheet" href="./css/style.css">
+  <!--icon-->
+  <link rel="icon" type="image/x-icon" href="./img/lightning-fill.svg">
 </head>
+
 <body>
   <header>
     <h1>Wiki Harry Potter</h1>
@@ -17,13 +21,23 @@
     </ul>
   </nav>
   <article>
-    <h2>Batallas</h2>
-    <div id="randomCard"></div>
-    <button id="select-button">Generar hechizo</button>
+    <h1 style="margin-left: 50%;">Batalla</h1>
+    <div class="container">
+      <div id="randomCard1" class="personaje_1">
+        <h2 id="batalla">Personaje 1</h2>
+      </div>
+      <div id="hechizos" class="hechizos">
+        <h2>Hechizos</h2>
+      </div>
+      <div id="randomCard2" class="personaje_2">
+        <h2 id="batalla">Personaje 2</h2>
+      </div>
+    </div>
   </article>
   <footer>
     <p>&copy; 2024 Alex Urueña</p>
   </footer>
   <script src="./js/hechizos.js"></script>
 </body>
+
 </html>
